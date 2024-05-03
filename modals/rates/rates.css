@@ -1,0 +1,53 @@
+.modalWrapper__content-bodyScrollContainer--Rates {
+  padding-top: 15px;
+}
+
+.ratesIconCard .modalWrapper__content-iconCard-text-key {
+  font-size: 12px;
+}
+
+.ratesIconCard .modalWrapper__content-iconCard-text {
+  width: 100%;
+  align-items: center;
+}
+
+.ratesIconCard.modalWrapper__content-iconCard {
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 12px;
+}
+
+.ratesFlashBtn.modalWrapper__content-flashBtn {
+  max-width: 120px;
+  width: 100%;
+}
+
+.modalWrapper__content-iconCard-text-progress {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: center;
+}
+
+.modalWrapper__content-iconCard-text-progress-old {
+  font-size: 15px;
+  color: #673D27;
+}
+
+.modalWrapper__content-iconCard-text-progress-new {
+  font-size: 20px;
+  color: #69C226;
+}
+
+.market__list-item-badges-item--Locked {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: #A2A2A2 !important;
+}
+
+.rates__text {
+  margin: 20px 20px 0 20px;
+  color: #673D27;
+  font-size: 14px;
+}

@@ -1,0 +1,81 @@
+.friendsModal__inviteBtn {
+  width: 50% !important;
+  height: 100%;
+  max-width: 148px;
+}
+
+.friendsModal__inviteBtn * {
+  font-size: 16px !important;
+  font-weight: 700 !important;
+}
+
+.friendsModal__infoCard {
+  width: 50% !important;
+  max-width: 148px;
+}
+
+.friendsList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.friendsList__item {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+  background-color: #FDF4EB;
+  border-radius: 16px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.friendsList__item-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.friendsList__item-content-main {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.friendsList__item-content-main-name {
+  font-size: 12px;
+  color: #673D27;
+}
+
+
+
+.friendsList__item-content-main-badges {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  font-size: 10px;
+}
+
+.friendsList__item-content-main-badges-item:nth-child(1) {
+  padding: 4px 6px;
+  border-radius: 17px;
+  background: #0088CC;
+  font-weight: 500;
+}
+
+.friendsList__item-content-main-badges-item:nth-child(2) {
+  padding: 4px 6px;
+  border-radius: 17px;
+  background: #69C226;
+  font-weight: 500;
+}
+
+.friendsList__item-content-ava {
+  max-width: 50px;
+  width: 100%;
+}
+
+.friendsList__item-link:active {
+  transform: scale(1.02);
+}

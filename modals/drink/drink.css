@@ -1,0 +1,40 @@
+.modalWrapper__content-infoCard--Drink .modalWrapper__content-infoCard-icon {
+  max-width: 32px;
+}
+
+.modalWrapper__content-infoCard--Drink a {
+  color: #ffffff;
+}
+
+.modalWrapper__content-topBlock--Drink > div {
+  max-height: 50px !important;
+}
+
+.market__list-item--Moloko {
+  justify-content: space-between;
+  gap: 4px;
+}
+
+.market__list-item--Moloko .market__list-item-iconBox-hay {
+  margin-left: 20px;
+}
+
+.market__list-item--Moloko .market__list-item-iconBox {
+  width: fit-content;
+}
+
+.market__list-item--Moloko .market__list-item-badges {
+  margin-left: 0;
+}
+
+.market__list-item--Moloko .modalWrapper__content-flashBtn {
+  margin-left: 0;
+}
+
+.drinkText {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 14px;
+  color: #673D27;
+  margin-top: 22px;
+}

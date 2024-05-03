@@ -1,4 +1,10 @@
 @import "market/market.css";
+@import "info/info.css";
+@import "token/token.css";
+@import "friends/friends.css";
+@import "balance/balance.css";
+@import "drink/drink.css";
+@import "rates/rates.css";
 
 .shadowGradientText {
     background: -webkit-linear-gradient(#FFFFFF, #FFF7C8);
@@ -20,7 +26,22 @@
     overflow-y: scroll;
     display: flex;
     justify-content: center;
-    
+    transition: all .2s ease-in-out;
+    opacity: 1;
+}
+
+.modalWrapper--Hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+[data-modal] {
+    transition: all .2s ease-in-out;
+    opacity: 1;
+}
+
+.modalHidden {
+    display: none !important;
 }
 
 .modalWrapper__woodBg {
@@ -35,12 +56,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 50px;
 }
 .modalWrapper__woodBg-closeIcon {
     position: absolute;
     max-width: 35px;
     right: 10px;
     top: 35px;
+    z-index: 2;
 }
 
 .modalWrapper__woodBg-centerIcon.circleBtnWrapper {
@@ -48,6 +71,13 @@
     left: 50%;
     top: -12px;
     transform: translateX(-50%);
+    max-width: 60px;
+}
+
+.modalWrapper__woodBg-centerIcon.circleBtnWrapper .circleBtn__img {
+    max-width: 60px;
+    max-height: 60px;
+    width: 100%;
 }
 
 .modalWrapper__woodBg-centerIcon.circleBtnWrapper:active .circleBtn {
@@ -63,7 +93,7 @@
     background-image: url("img/bg-svg.svg");
     background-position: center;
     background-size: contain;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     width: 100%;
     height: 100%;
     height: 504px;
@@ -81,6 +111,8 @@
     opacity: 70%;
     font-size: 20px;
     font-weight: 500;
+    width: 100%;
+    text-align: center;
 }
 
 .modalWrapper__content-bodyScrollContainer {
@@ -108,8 +140,8 @@
 }
 
 .modalWrapper__content-bodyScrollContainer::-webkit-scrollbar-track {
-    border-radius: 5px;  
-    background-color: #EBC189; 
+    border-radius: 5px;
+    background-color: #EBC189;
 }
 
 .modalWrapper__content-topBlock {
@@ -117,6 +149,7 @@
     align-items: center;
     justify-content: space-between;
     gap: 14px;
+    width: 100%;
 }
 
 .modalWrapper__content-infoCard {
@@ -190,4 +223,139 @@
     position: absolute;
     bottom: 6px;
     right: 10px;
+}
+
+.modalWrapper__content-iconCardRow {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    justify-content: space-between;
+}
+
+.modalWrapper__content-iconCard {
+    background-color: #FDF4EB;
+    border-radius: 16px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 17px 20px;
+    position: relative;
+    max-width: 140px;
+    width: 100%;
+}
+
+.modalWrapper__content-iconCard-icon {
+    max-width: 64px;
+    width: 100%;
+    margin-top: -32px;
+    margin-bottom: 10px;
+}
+
+.modalWrapper__content-iconCard-text {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+
+.modalWrapper__content-iconCard-text-key {
+    color: #C27248;
+    font-size: 16px;
+}
+
+.modalWrapper__content-iconCard-text-value {
+    color: #673D27;
+    font-size: 20px;
+}
+
+/* TOAST */
+.toastBorderWrapper {
+    padding: 4px;
+    border-radius: 21px;
+    backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, 0.3);
+    position: fixed;
+    bottom: 14px;
+    max-width: calc(330px - 20px);
+    width: 100%;
+    z-index: 2000;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
+    transition: all .2s ease-in-out;
+}
+
+.toastBorderWrapper--Hidden {
+    bottom: -100%;
+    pointer-events: none;
+}
+
+.toast {
+    width: 100%;
+    border-radius: 21px;
+    padding: 16px 22px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.toast__info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.toast__icon {
+    max-width: 40px;
+}
+
+.toast__info-title {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.toast__info-text {
+    font-size: 11px;
+    opacity: 70%;
+    color: #ffffff;
+}
+
+.toastSuccess {
+    background: linear-gradient(to bottom, #C8E223, #19AA16);
+}
+
+.toastError {
+    background: linear-gradient(to bottom, #FF5939, #D82027);
+}
+
+@media screen and (max-width: 400px) {
+    .modalWrapper {
+        padding: 0;
+    }
+
+    .modalWrapper__woodBg {
+        transform: scale(0.90);
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .modalWrapper__woodBg {
+        transform: scale(0.90);
+    }
+
+    .modalWrapper__content {
+        transform: scale(0.95);
+    }
+}
+
+@media screen and (max-width: 335px) {
+    .modalWrapper__woodBg {
+        transform: scale(0.90);
+    }
+
+    .modalWrapper__content {
+        transform: scale(0.95);
+    }
 }

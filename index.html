@@ -52,7 +52,7 @@
 												</div>
 
 												<!-- roundLink -->
-												<a href="#" class="roundLink">
+												<a data-modal-button="balance" href="#" class="roundLink">
 														<svg class="roundLink__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 																<g filter="url(#filter0_i_9_5866)">
 																		<circle cx="12" cy="12" r="12" fill="url(#paint0_linear_9_5866)"/>
@@ -112,7 +112,7 @@
 												</div>
 
 												<!-- roundLink -->
-												<a href="#" class="roundLink">
+												<a data-modal-button="balance-moloko" href="#" class="roundLink">
 														<svg class="roundLink__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 																<g filter="url(#filter0_i_9_5866)">
 																		<circle cx="12" cy="12" r="12" fill="url(#paint0_linear_9_5866)"/>
@@ -166,7 +166,7 @@
 								<div class="header__infoBlock">
 
 										<!-- ui/circleBtn -->
-										<div class="header__infoBlock-book circleBtnWrapper">
+										<div data-modal-button="info" class="header__infoBlock-book circleBtnWrapper">
 												<a href="#" class="circleBtn">
 														<img src="components/header/img/book.svg" alt="book" class="circleBtn__img">
 												</a>
@@ -323,7 +323,7 @@
 								</div>
 
 								<!-- icon -->
-								<a href="#" class="main__bar-wood-btn">
+								<a data-modal-button="drink" class="main__bar-wood-btn">
 									<img src="components/main/img/drink-icon.png"
 										 alt="food"
 										 class="main__bar-wood-btn-icon">
@@ -361,7 +361,8 @@
 								<!-- item -->
 								<div class="footer__link">
 										<!-- ui/circleBtn -->
-										<div class="footer__link-item circleBtnWrapper">
+										<div data-modal-button="market"
+												 class="footer__link-item circleBtnWrapper">
 												<a class="footer__link-item-link circleBtn">
 														<img src="components/footer/img/1.svg" alt="book" class="circleBtn__img">
 												</a>
@@ -378,7 +379,8 @@
 								<!-- item -->
 								<div class="footer__link">
 										<!-- ui/circleBtn -->
-										<div class="footer__link-item circleBtnWrapper">
+										<div data-modal-button="rates"
+												 class="footer__link-item circleBtnWrapper">
 												<a class="footer__link-item-link circleBtn">
 														<img src="components/footer/img/2.svg" alt="book" class="circleBtn__img">
 												</a>
@@ -395,7 +397,8 @@
 								<!-- item -->
 								<div class="footer__link">
 										<!-- ui/circleBtn -->
-										<div class="footer__link-item circleBtnWrapper">
+										<div data-modal-button="token"
+												 class="footer__link-item circleBtnWrapper">
 												<a class="footer__link-item-link circleBtn">
 														<img src="components/footer/img/3.svg" alt="book" class="circleBtn__img">
 												</a>
@@ -412,7 +415,8 @@
 								<!-- item -->
 								<div class="footer__link">
 										<!-- ui/circleBtn -->
-										<div class="footer__link-item circleBtnWrapper">
+										<div data-modal-button="friends"
+												 class="footer__link-item circleBtnWrapper">
 												<a class="footer__link-item-link circleBtn">
 														<img src="components/footer/img/4.svg" alt="book" class="circleBtn__img">
 												</a>
@@ -430,12 +434,12 @@
 		</footer>
 </div>
 
-<div class="modalWrapper">
+
+<div class="modalWrapper modalWrapper--Hidden">
 
 	<!-- 1) MARKET -->
-	<!-- wood -->
-	<div class="modalWrapper__woodBg">
-		
+	<div data-modal="market" class="modalWrapper__woodBg modalHidden">
+
 		<!-- close icon -->
 		<img src="modals/img/close.png" alt="close" class="modalWrapper__woodBg-closeIcon">
 
@@ -469,7 +473,7 @@
 				</div>
 
 				<!-- info card -->
-				<div class="modalWrapper__content-infoCard">
+				<div data-modal-button="balance" class="modalWrapper__content-infoCard">
 					<div class="modalWrapper__content-infoCard-info">
 						<div class="modalWrapper__content-infoCard-info-key">
 							Пополнить
@@ -484,10 +488,10 @@
 
 			<!-- SCROLLABLE BODY -->
 			<div class="modalWrapper__content-bodyScrollContainer">
-				
+
 				<!-- market list -->
 				<div class="modalWrapper__content-body market__list">
-					
+
 					<!-- ITEM -->
 					<div class="market__list-item">
 
@@ -510,7 +514,7 @@
 								<span class="shadowGradientText">+10 MOLOKO</span>
 							</div>
 						</div>
-						
+
 
 						<!-- flash btn -->
 						<a class="market__list-item-buyButton modalWrapper__content-flashBtn modalWrapper__content-flashBtn--Vertical">
@@ -547,7 +551,7 @@
 								<span class="shadowGradientText">+10 MOLOKO</span>
 							</div>
 						</div>
-						
+
 
 						<!-- flash btn -->
 						<a class="market__list-item-buyButton modalWrapper__content-flashBtn modalWrapper__content-flashBtn--Vertical">
@@ -584,7 +588,7 @@
 								<span class="shadowGradientText">+10 MOLOKO</span>
 							</div>
 						</div>
-						
+
 
 						<!-- flash btn -->
 						<a class="market__list-item-buyButton modalWrapper__content-flashBtn modalWrapper__content-flashBtn--Vertical">
@@ -621,7 +625,7 @@
 								<span class="shadowGradientText">+10 MOLOKO</span>
 							</div>
 						</div>
-						
+
 
 						<!-- flash btn -->
 						<a class="market__list-item-buyButton modalWrapper__content-flashBtn modalWrapper__content-flashBtn--Vertical">
@@ -658,7 +662,7 @@
 								<span class="shadowGradientText">+10 MOLOKO</span>
 							</div>
 						</div>
-						
+
 
 						<!-- flash btn -->
 						<a class="market__list-item-buyButton modalWrapper__content-flashBtn modalWrapper__content-flashBtn--Vertical">
@@ -695,7 +699,7 @@
 								<span class="shadowGradientText">+10 MOLOKO</span>
 							</div>
 						</div>
-						
+
 
 						<!-- flash btn -->
 						<a class="market__list-item-buyButton modalWrapper__content-flashBtn modalWrapper__content-flashBtn--Vertical">
@@ -732,7 +736,7 @@
 								<span class="shadowGradientText">+10 MOLOKO</span>
 							</div>
 						</div>
-						
+
 
 						<!-- flash btn -->
 						<a class="market__list-item-buyButton modalWrapper__content-flashBtn modalWrapper__content-flashBtn--Vertical">
@@ -769,7 +773,7 @@
 								<span class="shadowGradientText">+10 MOLOKO</span>
 							</div>
 						</div>
-						
+
 
 						<!-- flash btn -->
 						<a class="market__list-item-buyButton modalWrapper__content-flashBtn modalWrapper__content-flashBtn--Vertical">
@@ -806,7 +810,7 @@
 								<span class="shadowGradientText">+10 MOLOKO</span>
 							</div>
 						</div>
-						
+
 
 						<!-- flash btn -->
 						<a class="market__list-item-buyButton modalWrapper__content-flashBtn modalWrapper__content-flashBtn--Vertical">
@@ -843,7 +847,7 @@
 								<span class="shadowGradientText">+10 MOLOKO</span>
 							</div>
 						</div>
-						
+
 
 						<!-- flash btn -->
 						<a class="market__list-item-buyButton modalWrapper__content-flashBtn modalWrapper__content-flashBtn--Vertical">
@@ -861,6 +865,966 @@
 			</div>
 		</div>
 	</div>
+
+	<!-- 2) INFO -->
+	<div data-modal="info" class="modalWrapper__woodBg modalHidden">
+
+		<!-- close icon -->
+		<img src="modals/img/close.png" alt="close" class="modalWrapper__woodBg-closeIcon">
+
+		<!-- ui/circleBtn -->
+		<div class="modalWrapper__woodBg-centerIcon circleBtnWrapper">
+			<a class="circleBtn">
+				<img src="modals/info/img/headerIcon.svg" alt="ico" class="circleBtn__img">
+			</a>
+		</div>
+
+		<!-- beige -->
+		<div class="modalWrapper__content">
+
+			<!-- header -->
+			<h2 class="modalWrapper__content-header">
+				Информация
+			</h2>
+
+			<!-- SCROLLABLE BODY -->
+			<div class="modalWrapper__content-bodyScrollContainer">
+
+					<!-- info -->
+					<div class="modalWrapper__content-body modalInfoBlock">
+							<p>Просто корми корову, а потом дои. Когда корова даст молока, собирай свою прибыль - монеты становятся твоими!</p>
+
+							<p>На данный момент игра находится в первой фазе своего развития.</p>
+
+							<p>Просто корми корову, а потом дои. Когда корова даст молока, собирай свою прибыль - монеты становятся твоими! На данный момент игра находится в первой фазе своего развития.</p>
+
+							<p>Просто корми корову, а потом дои. Когда корова даст молока, собирай свою прибыль - монеты становятся твоими!</p>
+
+							<p>На данный момент игра находится в первой фазе своего развития.</p>
+
+							<p>Просто корми корову, а потом дои. Когда корова даст молока, собирай свою прибыль - монеты становятся твоими!</p>
+
+							<p>На данный момент игра находится в первой фазе своего развития.</p>
+
+							<p>Просто корми корову, а потом дои. Когда корова даст молока, собирай свою прибыль - монеты становятся твоими! На данный момент игра находится в первой фазе своего развития.</p>
+
+							<p>Просто корми корову, а потом дои. Когда корова даст молока, собирай свою прибыль - монеты становятся твоими!</p>
+
+							<p>На данный момент игра находится в первой фазе своего развития.</p>
+					</div>
+			</div>
+		</div>
+	</div>
+
+		<!-- 3) TOKEN -->
+		<div data-modal="token" class="modalWrapper__woodBg modalHidden">
+
+				<!-- close icon -->
+				<img src="modals/img/close.png" alt="close" class="modalWrapper__woodBg-closeIcon">
+
+				<!-- ui/circleBtn -->
+				<div class="modalWrapper__woodBg-centerIcon circleBtnWrapper">
+						<a class="circleBtn">
+								<img src="modals/token/img/headerIcon.png" alt="ico" class="circleBtn__img">
+						</a>
+				</div>
+
+				<!-- beige -->
+				<div class="modalWrapper__content modalWrapper__content--token">
+
+						<!-- header -->
+						<h2 class="modalWrapper__content-header">
+								Токеномика
+						</h2>
+
+						<!-- top block -->
+						<div class="modalWrapper__content-topBlock">
+
+								<!-- info card -->
+								<div class="modalWrapper__content-infoCard infoCard__token">
+										<div class="modalWrapper__content-infoCard-info">
+												<div class="modalWrapper__content-infoCard-info-key">Полная эмиссия токена:</div>
+												<div class="modalWrapper__content-infoCard-info-value">100000000000 MOLOKO</div>
+										</div>
+								</div>
+						</div>
+
+						<!-- SCROLLABLE BODY -->
+						<div class="modalWrapper__content-bodyScrollContainer modalWrapper__content-bodyScrollContainer--Token">
+
+								<div class="modalWrapper__content-iconCardRow">
+										<!-- iconCard -->
+										<div class="modalWrapper__content-iconCard">
+												<img src="modals/token/img/1.png" alt="icon" class="modalWrapper__content-iconCard-icon">
+
+												<div class="modalWrapper__content-iconCard-text">
+														<div class="modalWrapper__content-iconCard-text-key">
+																Общий аирдроп
+														</div>
+														<div class="modalWrapper__content-iconCard-text-value">
+																3.33%
+														</div>
+												</div>
+										</div>
+
+										<!-- iconCard -->
+										<div class="modalWrapper__content-iconCard">
+												<img src="modals/token/img/2.png" alt="icon" class="modalWrapper__content-iconCard-icon">
+
+												<div class="modalWrapper__content-iconCard-text">
+														<div class="modalWrapper__content-iconCard-text-key">
+																Пул
+																ликвидности
+														</div>
+														<div class="modalWrapper__content-iconCard-text-value">
+																96.77%
+														</div>
+												</div>
+										</div>
+								</div>
+
+								<!-- flash btn -->
+								<a data-modal-button="balance-moloko" class="token__buyBtn modalWrapper__content-flashBtn">
+
+										<img src="modals/img/flashBtn/1.svg" alt="flash" class="modalWrapper__content-flashBtn-flashTop">
+										<img src="modals/img/flashBtn/2.svg" alt="flash" class="modalWrapper__content-flashBtn-flashBottom">
+
+										<img src="modals/img/flashBtn/plus.svg" alt="plus" class="modalWrapper__content-flashBtn-icon">
+										<div class="modalWrapper__content-flashBtn-text shadowGradientText">
+												Купить MOLOKO
+										</div>
+								</a>
+
+								<div class="token__text">
+										Просто корми корову, а потом дои. Когда корова даст молока, собирай свою прибыль - монеты становятся твоими!
+								</div>
+						</div>
+				</div>
+		</div>
+
+		<!-- 4) FRIENDS -->
+		<div data-modal="friends" class="modalWrapper__woodBg modalHidden">
+
+				<!-- close icon -->
+				<img src="modals/img/close.png" alt="close" class="modalWrapper__woodBg-closeIcon">
+
+				<!-- ui/circleBtn -->
+				<div class="modalWrapper__woodBg-centerIcon circleBtnWrapper">
+						<a class="circleBtn">
+								<img src="modals/friends/img/headerIcon.svg" alt="ico" class="circleBtn__img">
+						</a>
+				</div>
+
+				<!-- beige -->
+				<div class="modalWrapper__content">
+
+						<!-- header -->
+						<h2 class="modalWrapper__content-header">
+								Друзья
+						</h2>
+
+						<!-- top block -->
+						<div class="modalWrapper__content-topBlock">
+
+								<!-- info card -->
+								<div class="friendsModal__infoCard modalWrapper__content-infoCard">
+										<div class="modalWrapper__content-infoCard-info">
+												<div class="modalWrapper__content-infoCard-info-key">Всего приглашено:</div>
+												<div class="modalWrapper__content-infoCard-info-value">123456</div>
+										</div>
+								</div>
+
+								<!-- flash btn -->
+								<a class="friendsModal__inviteBtn modalWrapper__content-flashBtn">
+
+										<img src="modals/img/flashBtn/1.svg" alt="flash" class="modalWrapper__content-flashBtn-flashTop">
+										<img src="modals/img/flashBtn/2.svg" alt="flash" class="modalWrapper__content-flashBtn-flashBottom">
+
+										<img src="modals/img/flashBtn/plus.svg" alt="plus" class="modalWrapper__content-flashBtn-icon">
+										<div class="modalWrapper__content-flashBtn-text shadowGradientText">
+												Пригласить
+										</div>
+								</a>
+						</div>
+
+						<!-- SCROLLABLE BODY -->
+						<div class="modalWrapper__content-bodyScrollContainer">
+
+								<!-- friends list -->
+								<div class="modalWrapper__content-body friendsList">
+
+										<!-- item -->
+										<div class="friendsList__item">
+												<div class="friendsList__item-content">
+														<img src="modals/friends/img/ava.png" alt="ava" class="friendsList__item-content-ava">
+														<div class="friendsList__item-content-main">
+																<div class="friendsList__item-content-main-name">
+																		Pasha Durov
+																</div>
+																<div class="friendsList__item-content-main-badges">
+																		<div class="friendsList__item-content-main-badges-item ">
+																				<span class="shadowGradientText">1234 TON</span>
+																		</div>
+																		<div class="friendsList__item-content-main-badges-item ">
+																				<span class="shadowGradientText">+ 120 TON</span>
+																		</div>
+																</div>
+														</div>
+												</div>
+
+												<!-- ui/circleBtn -->
+												<div class="friendsList__item-link circleBtnWrapper">
+														<a class="circleBtn">
+																<img src="modals/friends/img/arrow-right.svg" alt="ico" class="circleBtn__img">
+														</a>
+												</div>
+										</div>
+
+										<!-- item -->
+										<div class="friendsList__item">
+												<div class="friendsList__item-content">
+														<img src="modals/friends/img/ava.png" alt="ava" class="friendsList__item-content-ava">
+														<div class="friendsList__item-content-main">
+																<div class="friendsList__item-content-main-name">
+																		Pasha Durov
+																</div>
+																<div class="friendsList__item-content-main-badges">
+																		<div class="friendsList__item-content-main-badges-item ">
+																				<span class="shadowGradientText">1234 TON</span>
+																		</div>
+																		<div class="friendsList__item-content-main-badges-item ">
+																				<span class="shadowGradientText">+ 120 TON</span>
+																		</div>
+																</div>
+														</div>
+												</div>
+
+												<!-- ui/circleBtn -->
+												<div class="friendsList__item-link circleBtnWrapper">
+														<a class="circleBtn">
+																<img src="modals/friends/img/arrow-right.svg" alt="ico" class="circleBtn__img">
+														</a>
+												</div>
+										</div>
+
+										<!-- item -->
+										<div class="friendsList__item">
+												<div class="friendsList__item-content">
+														<img src="modals/friends/img/ava.png" alt="ava" class="friendsList__item-content-ava">
+														<div class="friendsList__item-content-main">
+																<div class="friendsList__item-content-main-name">
+																		Pasha Durov
+																</div>
+																<div class="friendsList__item-content-main-badges">
+																		<div class="friendsList__item-content-main-badges-item ">
+																				<span class="shadowGradientText">1234 TON</span>
+																		</div>
+																		<div class="friendsList__item-content-main-badges-item ">
+																				<span class="shadowGradientText">+ 120 TON</span>
+																		</div>
+																</div>
+														</div>
+												</div>
+
+												<!-- ui/circleBtn -->
+												<div class="friendsList__item-link circleBtnWrapper">
+														<a class="circleBtn">
+																<img src="modals/friends/img/arrow-right.svg" alt="ico" class="circleBtn__img">
+														</a>
+												</div>
+										</div>
+
+										<!-- item -->
+										<div class="friendsList__item">
+												<div class="friendsList__item-content">
+														<img src="modals/friends/img/ava.png" alt="ava" class="friendsList__item-content-ava">
+														<div class="friendsList__item-content-main">
+																<div class="friendsList__item-content-main-name">
+																		Pasha Durov
+																</div>
+																<div class="friendsList__item-content-main-badges">
+																		<div class="friendsList__item-content-main-badges-item ">
+																				<span class="shadowGradientText">1234 TON</span>
+																		</div>
+																		<div class="friendsList__item-content-main-badges-item ">
+																				<span class="shadowGradientText">+ 120 TON</span>
+																		</div>
+																</div>
+														</div>
+												</div>
+
+												<!-- ui/circleBtn -->
+												<div class="friendsList__item-link circleBtnWrapper">
+														<a class="circleBtn">
+																<img src="modals/friends/img/arrow-right.svg" alt="ico" class="circleBtn__img">
+														</a>
+												</div>
+										</div>
+
+										<!-- item -->
+										<div class="friendsList__item">
+												<div class="friendsList__item-content">
+														<img src="modals/friends/img/ava.png" alt="ava" class="friendsList__item-content-ava">
+														<div class="friendsList__item-content-main">
+																<div class="friendsList__item-content-main-name">
+																		Pasha Durov
+																</div>
+																<div class="friendsList__item-content-main-badges">
+																		<div class="friendsList__item-content-main-badges-item ">
+																				<span class="shadowGradientText">1234 TON</span>
+																		</div>
+																		<div class="friendsList__item-content-main-badges-item ">
+																				<span class="shadowGradientText">+ 120 TON</span>
+																		</div>
+																</div>
+														</div>
+												</div>
+
+												<!-- ui/circleBtn -->
+												<div class="friendsList__item-link circleBtnWrapper">
+														<a class="circleBtn">
+																<img src="modals/friends/img/arrow-right.svg" alt="ico" class="circleBtn__img">
+														</a>
+												</div>
+										</div>
+								</div>
+						</div>
+				</div>
+		</div>
+
+		<!-- 5) BALANCE -->
+		<div data-modal="balance" class="modalWrapper__woodBg modalHidden">
+
+				<!-- close icon -->
+				<img src="modals/img/close.png" alt="close" class="modalWrapper__woodBg-closeIcon">
+
+				<!-- ui/circleBtn -->
+				<div class="modalWrapper__woodBg-centerIcon circleBtnWrapper">
+						<a class="circleBtn">
+								<img src="modals/balance/img/headerIcon.svg" alt="ico" class="circleBtn__img">
+						</a>
+				</div>
+
+				<!-- beige -->
+				<div class="modalWrapper__content modalWrapper__content--token">
+
+						<!-- header -->
+						<h2 class="modalWrapper__content-header">
+								Баланс TON
+						</h2>
+
+						<!-- top block -->
+						<div class="modalWrapper__content-topBlock">
+
+								<!-- info card -->
+								<div class="modalWrapper__content-infoCard infoCard__token">
+										<div class="modalWrapper__content-infoCard-info">
+												<div class="modalWrapper__content-infoCard-info-key">Доступный баланс:</div>
+												<div class="modalWrapper__content-infoCard-info-value">1234.5678</div>
+										</div>
+								</div>
+						</div>
+
+						<!-- SCROLLABLE BODY -->
+						<div class="modalWrapper__content-bodyScrollContainer modalWrapper__content-bodyScrollContainer--Balance">
+
+								<!-- flash btn -->
+								<a data-modal-button="add-balance" class="balance__upload modalWrapper__content-flashBtn">
+
+										<img src="modals/img/flashBtn/1.svg" alt="flash" class="modalWrapper__content-flashBtn-flashTop">
+										<img src="modals/img/flashBtn/2.svg" alt="flash" class="modalWrapper__content-flashBtn-flashBottom">
+
+										<img src="modals/balance/img/download.svg" alt="plus" class="modalWrapper__content-flashBtn-icon">
+										<div class="modalWrapper__content-flashBtn-text shadowGradientText">
+												Пополнить баланс
+										</div>
+								</a>
+
+								<!-- flash btn -->
+								<a data-modal-button="remove-balance" class="balance__download modalWrapper__content-flashBtn">
+
+										<img src="modals/img/flashBtn/1.svg" alt="flash" class="modalWrapper__content-flashBtn-flashTop">
+										<img src="modals/img/flashBtn/2.svg" alt="flash" class="modalWrapper__content-flashBtn-flashBottom">
+
+										<img src="modals/balance/img/upload.svg" alt="plus" class="modalWrapper__content-flashBtn-icon">
+										<div class="modalWrapper__content-flashBtn-text shadowGradientText">
+												Вывести средства
+										</div>
+								</a>
+
+								<div class="balance_text balance_text--Add">
+										Просто корми корову, а потом дои. Когда корова даст молока, собирай свою прибыль - монеты становятся твоими!
+								</div>
+						</div>
+				</div>
+		</div>
+
+		<!-- 6) ADD BALANCE -->
+		<div data-modal="add-balance" class="modalWrapper__woodBg modalHidden">
+
+				<!-- close icon -->
+				<img src="modals/img/close.png" alt="close" class="modalWrapper__woodBg-closeIcon">
+
+				<!-- ui/circleBtn -->
+				<div class="modalWrapper__woodBg-centerIcon circleBtnWrapper">
+						<a class="circleBtn">
+								<img src="modals/balance/img/headerIcon.svg" alt="ico" class="circleBtn__img">
+						</a>
+				</div>
+
+				<!-- beige -->
+				<div class="modalWrapper__content modalWrapper__content--token">
+
+						<!-- header -->
+						<h2 class="modalWrapper__content-header">
+								Пополнение TON
+						</h2>
+
+						<!-- top block -->
+						<div class="modalWrapper__content-topBlock">
+
+								<!-- info card -->
+								<div class="modalWrapper__content-infoCard infoCard__token">
+										<div class="modalWrapper__content-infoCard-info">
+												<div class="modalWrapper__content-infoCard-info-key">Доступный баланс:</div>
+												<div class="modalWrapper__content-infoCard-info-value">1234.5678</div>
+										</div>
+								</div>
+						</div>
+
+						<!-- SCROLLABLE BODY -->
+						<div class="modalWrapper__content-bodyScrollContainer modalWrapper__content-bodyScrollContainer--AddBalance">
+
+								<div class="balance__inputBlock">
+										<label for="addBalance">Сумма TON:</label>
+										<input id="addBalance" type="text" placeholder="Введите сумму">
+								</div>
+
+								<!-- flash btn -->
+								<a class="balance__upload balance__upload--AddBalanceModal modalWrapper__content-flashBtn">
+
+										<img src="modals/img/flashBtn/1.svg" alt="flash" class="modalWrapper__content-flashBtn-flashTop">
+										<img src="modals/img/flashBtn/2.svg" alt="flash" class="modalWrapper__content-flashBtn-flashBottom">
+
+										<img src="modals/balance/img/download.svg" alt="plus" class="modalWrapper__content-flashBtn-icon">
+										<div class="modalWrapper__content-flashBtn-text shadowGradientText">
+												Пополнить баланс
+										</div>
+								</a>
+
+								<div class="balance_text">
+										Просто корми корову, а потом дои. Когда корова даст молока, собирай свою прибыль - монеты становятся твоими!
+								</div>
+						</div>
+				</div>
+		</div>
+
+		<!-- 7) REMOVE BALANCE -->
+		<div data-modal="remove-balance" class="modalWrapper__woodBg modalHidden">
+
+				<!-- close icon -->
+				<img src="modals/img/close.png" alt="close" class="modalWrapper__woodBg-closeIcon">
+
+				<!-- ui/circleBtn -->
+				<div class="modalWrapper__woodBg-centerIcon circleBtnWrapper">
+						<a class="circleBtn">
+								<img src="modals/balance/img/headerIcon.svg" alt="ico" class="circleBtn__img">
+						</a>
+				</div>
+
+				<!-- beige -->
+				<div class="modalWrapper__content modalWrapper__content--token">
+
+						<!-- header -->
+						<h2 class="modalWrapper__content-header">
+								Вывод средств
+						</h2>
+
+						<!-- top block -->
+						<div class="modalWrapper__content-topBlock">
+
+								<!-- info card -->
+								<div class="modalWrapper__content-infoCard infoCard__token">
+										<div class="modalWrapper__content-infoCard-info">
+												<div class="modalWrapper__content-infoCard-info-key">Доступный баланс:</div>
+												<div class="modalWrapper__content-infoCard-info-value">1234.5678</div>
+										</div>
+								</div>
+						</div>
+
+						<!-- SCROLLABLE BODY -->
+						<div class="modalWrapper__content-bodyScrollContainer modalWrapper__content-bodyScrollContainer--AddBalance">
+
+								<div class="balance__inputBlock">
+										<label for="removeBalance">Сумма TON:</label>
+										<input id="removeBalance" type="text" placeholder="Введите сумму">
+								</div>
+
+								<div class="balance__inputBlock balance__inputBlock-id">
+										<label for="id">Кошелек:</label>
+										<input id="id" type="text" placeholder="Введите id кошелька">
+								</div>
+
+								<!-- flash btn -->
+								<a class="balance__download balance__download--RemoveBalanceModal modalWrapper__content-flashBtn">
+
+										<img src="modals/img/flashBtn/1.svg" alt="flash" class="modalWrapper__content-flashBtn-flashTop">
+										<img src="modals/img/flashBtn/2.svg" alt="flash" class="modalWrapper__content-flashBtn-flashBottom">
+
+										<img src="modals/balance/img/upload.svg" alt="plus" class="modalWrapper__content-flashBtn-icon">
+										<div class="modalWrapper__content-flashBtn-text shadowGradientText">
+												Вывести средства
+										</div>
+								</a>
+
+								<div class="balance_text balance_text--Remove">
+										Просто корми корову, а потом дои. Когда корова даст молока, собирай свою прибыль - монеты становятся твоими!
+								</div>
+						</div>
+				</div>
+		</div>
+
+		<!-- 8) DRINK -->
+		<div data-modal="drink" class="modalWrapper__woodBg modalHidden">
+
+				<!-- close icon -->
+				<img src="modals/img/close.png" alt="close" class="modalWrapper__woodBg-closeIcon">
+
+				<!-- ui/circleBtn -->
+				<div class="modalWrapper__woodBg-centerIcon circleBtnWrapper">
+						<a class="circleBtn">
+								<img src="modals/drink/img/headerIcon.svg" alt="ico" class="circleBtn__img">
+						</a>
+				</div>
+
+				<!-- beige -->
+				<div class="modalWrapper__content">
+
+						<!-- header -->
+						<h2 class="modalWrapper__content-header">
+								Жажда
+						</h2>
+
+						<!-- top block -->
+						<div class="modalWrapper__content-topBlock modalWrapper__content-topBlock--Drink">
+
+								<!-- info card -->
+								<div class="modalWrapper__content-infoCard modalWrapper__content-infoCard--Drink">
+										<div class="modalWrapper__content-infoCard-info">
+												<div class="modalWrapper__content-infoCard-info-key">Баланс:</div>
+												<div class="modalWrapper__content-infoCard-info-value">1234.5678</div>
+										</div>
+
+										<img src="modals/drink/img/1.png" alt="" class="modalWrapper__content-infoCard-icon">
+
+								</div>
+
+								<!-- info card -->
+								<div data-modal-button="balance-moloko" class="modalWrapper__content-infoCard modalWrapper__content-infoCard--Drink">
+										<div class="modalWrapper__content-infoCard-info">
+												<div class="modalWrapper__content-infoCard-info-key">
+														Пополнить <a>MOLOKO</a>
+												</div>
+										</div>
+
+										<!-- ui/circleBtn -->
+										<div class="header__infoBlock-book circleBtnWrapper">
+												<a href="#" class="circleBtn">
+														<img src="modals/drink/img/2.svg" alt="book" class="circleBtn__img">
+												</a>
+										</div>
+
+								</div>
+						</div>
+
+						<!-- SCROLLABLE BODY -->
+						<div class="modalWrapper__content-bodyScrollContainer">
+
+								<!-- market list -->
+								<div class="modalWrapper__content-body market__list">
+
+										<!-- ITEM -->
+										<div class="market__list-item market__list-item--Moloko">
+
+												<!-- icon -->
+												<div class="market__list-item-iconBox">
+														<img src="modals/drink/img/drink.png" alt="drink" class="market__list-item-iconBox-hay">
+												</div>
+
+												<!-- badges -->
+												<div class="market__list-item-badges">
+														<div class="market__list-item-badges-item">
+																<span class="shadowGradientText">1000 MOLOKO</span>
+														</div>
+												</div>
+
+
+												<!-- flash btn -->
+												<a class="market__list-item-buyButton modalWrapper__content-flashBtn modalWrapper__content-flashBtn--Vertical">
+
+														<img src="modals/img/flashBtn/1.svg" alt="flash" class="modalWrapper__content-flashBtn-flashTop">
+														<img src="modals/img/flashBtn/2.svg" alt="flash" class="modalWrapper__content-flashBtn-flashBottom">
+
+														<img src="modals/img/flashBtn/plus.svg" alt="plus" class="modalWrapper__content-flashBtn-icon">
+														<div class="modalWrapper__content-flashBtn-text shadowGradientText">
+																Купить
+														</div>
+												</a>
+										</div>
+								</div>
+
+								<div class="drinkText">
+										Просто корми корову, а потом дои. Когда корова даст молока, собирай свою прибыль - монеты становятся твоими!
+								</div>
+						</div>
+				</div>
+		</div>
+
+		<!-- 9) RATES -->
+		<div data-modal="rates" class="modalWrapper__woodBg modalHidden">
+
+				<!-- close icon -->
+				<img src="modals/img/close.png" alt="close" class="modalWrapper__woodBg-closeIcon">
+
+				<!-- ui/circleBtn -->
+				<div class="modalWrapper__woodBg-centerIcon circleBtnWrapper">
+						<a class="circleBtn">
+								<img src="modals/token/img/headerIcon.png" alt="ico" class="circleBtn__img">
+						</a>
+				</div>
+
+				<!-- beige -->
+				<div class="modalWrapper__content modalWrapper__content--token">
+
+						<!-- header -->
+						<h2 class="modalWrapper__content-header">
+								Рейты
+						</h2>
+
+						<!-- top block -->
+						<div class="modalWrapper__content-topBlock">
+
+								<!-- info card -->
+								<div class="modalWrapper__content-infoCard infoCard__token">
+										<div class="modalWrapper__content-infoCard-info">
+												<div class="modalWrapper__content-infoCard-info-key">Полная эмиссия токена:</div>
+												<div class="modalWrapper__content-infoCard-info-value">100000000000 MOLOKO</div>
+										</div>
+								</div>
+						</div>
+
+						<!-- SCROLLABLE BODY -->
+						<div class="modalWrapper__content-bodyScrollContainer modalWrapper__content-bodyScrollContainer--Rates">
+
+								<div class="modalWrapper__content-iconCardRow">
+										<!-- iconCard -->
+										<div class="ratesIconCard modalWrapper__content-iconCard">
+												<img src="modals/rates/img/2.png" alt="icon" class="modalWrapper__content-iconCard-icon">
+
+												<div class="modalWrapper__content-iconCard-text">
+														<div class="modalWrapper__content-iconCard-text-key">
+																Буст реферальный:
+														</div>
+														<div class="modalWrapper__content-iconCard-text-progress">
+																<div class="modalWrapper__content-iconCard-text-progress-old">
+																		5%
+																</div>
+																<img src="modals/rates/img/arrow-right.svg"
+																		 alt="arrow"
+																		 class="modalWrapper__content-iconCard-text-progress-img">
+																<div class="modalWrapper__content-iconCard-text-progress-new">
+																		6%
+																</div>
+														</div>
+
+														<div class="market__list-item-badges-item">
+																<span class="shadowGradientText">1000 MOLOKO</span>
+														</div>
+
+														<!-- flash btn -->
+														<a class="ratesFlashBtn modalWrapper__content-flashBtn">
+
+																<img src="modals/img/flashBtn/1.svg" alt="flash" class="modalWrapper__content-flashBtn-flashTop">
+																<img src="modals/img/flashBtn/2.svg" alt="flash" class="modalWrapper__content-flashBtn-flashBottom">
+
+																<div class="modalWrapper__content-flashBtn-text shadowGradientText">
+																		Улучшить
+																</div>
+														</a>
+												</div>
+										</div>
+
+										<!-- iconCard -->
+										<div class="ratesIconCard modalWrapper__content-iconCard">
+												<img src="modals/rates/img/2.png" alt="icon" class="modalWrapper__content-iconCard-icon">
+
+												<div class="modalWrapper__content-iconCard-text">
+														<div class="modalWrapper__content-iconCard-text-key">
+																Буст дохода:
+														</div>
+														<div class="modalWrapper__content-iconCard-text-progress">
+																<div class="modalWrapper__content-iconCard-text-progress-old">
+																		5%
+																</div>
+																<img src="modals/rates/img/arrow-right.svg"
+																		 alt="arrow"
+																		 class="modalWrapper__content-iconCard-text-progress-img">
+																<div class="modalWrapper__content-iconCard-text-progress-new">
+																		6%
+																</div>
+														</div>
+
+														<div class="market__list-item-badges-item market__list-item-badges-item--Locked">
+																<img src="modals/rates/img/lock.svg" alt="lock" class="market__list-item-badges-item-img">
+																<span class="shadowGradientText">2000 MOLOKO</span>
+														</div>
+
+														<!-- flash btn -->
+														<a class="ratesFlashBtn modalWrapper__content-flashBtn">
+
+																<img src="modals/img/flashBtn/1.svg" alt="flash" class="modalWrapper__content-flashBtn-flashTop">
+																<img src="modals/img/flashBtn/2.svg" alt="flash" class="modalWrapper__content-flashBtn-flashBottom">
+
+																<div class="modalWrapper__content-flashBtn-text shadowGradientText">
+																		Улучшить
+																</div>
+														</a>
+												</div>
+										</div>
+								</div>
+
+								<div class="rates__text">
+										Просто корми корову, а потом дои. Когда корова даст молока, собирай свою прибыль - монеты становятся твоими!
+								</div>
+						</div>
+				</div>
+		</div>
+
+		<!-- 10) BALANCE MOLOKO -->
+		<div data-modal="balance-moloko" class="modalWrapper__woodBg modalHidden">
+
+				<!-- close icon -->
+				<img src="modals/img/close.png" alt="close" class="modalWrapper__woodBg-closeIcon">
+
+				<!-- ui/circleBtn -->
+				<div class="modalWrapper__woodBg-centerIcon circleBtnWrapper">
+						<a class="circleBtn">
+								<img src="modals/token/img/headerIcon.png" alt="ico" class="circleBtn__img">
+						</a>
+				</div>
+
+				<!-- beige -->
+				<div class="modalWrapper__content modalWrapper__content--token">
+
+						<!-- header -->
+						<h2 class="modalWrapper__content-header">
+								Баланс MOLOKO
+						</h2>
+
+						<!-- top block -->
+						<div class="modalWrapper__content-topBlock">
+
+								<!-- info card -->
+								<div class="modalWrapper__content-infoCard infoCard__token">
+										<div class="modalWrapper__content-infoCard-info">
+												<div class="modalWrapper__content-infoCard-info-key">Доступный баланс:</div>
+												<div class="modalWrapper__content-infoCard-info-value">1234.5678</div>
+										</div>
+								</div>
+						</div>
+
+						<!-- SCROLLABLE BODY -->
+						<div class="modalWrapper__content-bodyScrollContainer modalWrapper__content-bodyScrollContainer--Balance">
+
+								<!-- flash btn -->
+								<a data-modal-button="add-balance-moloko" class="balance__upload modalWrapper__content-flashBtn">
+
+										<img src="modals/img/flashBtn/1.svg" alt="flash" class="modalWrapper__content-flashBtn-flashTop">
+										<img src="modals/img/flashBtn/2.svg" alt="flash" class="modalWrapper__content-flashBtn-flashBottom">
+
+										<img src="modals/balance/img/download.svg" alt="plus" class="modalWrapper__content-flashBtn-icon">
+										<div class="modalWrapper__content-flashBtn-text shadowGradientText">
+												Пополнить баланс
+										</div>
+								</a>
+
+								<!-- flash btn -->
+								<a data-modal-button="remove-balance-moloko" class="balance__download modalWrapper__content-flashBtn">
+
+										<img src="modals/img/flashBtn/1.svg" alt="flash" class="modalWrapper__content-flashBtn-flashTop">
+										<img src="modals/img/flashBtn/2.svg" alt="flash" class="modalWrapper__content-flashBtn-flashBottom">
+
+										<img src="modals/balance/img/upload.svg" alt="plus" class="modalWrapper__content-flashBtn-icon">
+										<div class="modalWrapper__content-flashBtn-text shadowGradientText">
+												Вывести средства
+										</div>
+								</a>
+
+								<div class="balance_text balance_text--Add">
+										Просто корми корову, а потом дои. Когда корова даст молока, собирай свою прибыль - монеты становятся твоими!
+								</div>
+						</div>
+				</div>
+		</div>
+
+		<!-- 11) ADD BALANCE MOLOKO -->
+		<div data-modal="add-balance-moloko" class="modalWrapper__woodBg modalHidden">
+
+				<!-- close icon -->
+				<img src="modals/img/close.png" alt="close" class="modalWrapper__woodBg-closeIcon">
+
+				<!-- ui/circleBtn -->
+				<div class="modalWrapper__woodBg-centerIcon circleBtnWrapper">
+						<a class="circleBtn">
+								<img src="modals/token/img/headerIcon.png" alt="ico" class="circleBtn__img">
+						</a>
+				</div>
+
+				<!-- beige -->
+				<div class="modalWrapper__content modalWrapper__content--token">
+
+						<!-- header -->
+						<h2 class="modalWrapper__content-header">
+								Пополнение MOLOKO
+						</h2>
+
+						<!-- top block -->
+						<div class="modalWrapper__content-topBlock">
+
+								<!-- info card -->
+								<div class="modalWrapper__content-infoCard infoCard__token">
+										<div class="modalWrapper__content-infoCard-info">
+												<div class="modalWrapper__content-infoCard-info-key">Доступный баланс:</div>
+												<div class="modalWrapper__content-infoCard-info-value">1234.5678</div>
+										</div>
+								</div>
+						</div>
+
+						<!-- SCROLLABLE BODY -->
+						<div class="modalWrapper__content-bodyScrollContainer modalWrapper__content-bodyScrollContainer--AddBalance">
+
+								<div class="balance__inputBlock">
+										<label for="addBalanceMoloko">Сумма TON:</label>
+										<input id="addBalanceMoloko" type="text" placeholder="Введите сумму">
+								</div>
+
+								<!-- flash btn -->
+								<a class="balance__upload balance__upload--AddBalanceModal modalWrapper__content-flashBtn">
+
+										<img src="modals/img/flashBtn/1.svg" alt="flash" class="modalWrapper__content-flashBtn-flashTop">
+										<img src="modals/img/flashBtn/2.svg" alt="flash" class="modalWrapper__content-flashBtn-flashBottom">
+
+										<img src="modals/balance/img/download.svg" alt="plus" class="modalWrapper__content-flashBtn-icon">
+										<div class="modalWrapper__content-flashBtn-text shadowGradientText">
+												Пополнить баланс
+										</div>
+								</a>
+
+								<div class="balance_text">
+										Просто корми корову, а потом дои. Когда корова даст молока, собирай свою прибыль - монеты становятся твоими!
+								</div>
+						</div>
+				</div>
+		</div>
+
+		<!-- 12) REMOVE BALANCE MOLOKO -->
+		<div data-modal="remove-balance-moloko" class="modalWrapper__woodBg modalHidden">
+
+				<!-- close icon -->
+				<img src="modals/img/close.png" alt="close" class="modalWrapper__woodBg-closeIcon">
+
+				<!-- ui/circleBtn -->
+				<div class="modalWrapper__woodBg-centerIcon circleBtnWrapper">
+						<a class="circleBtn">
+								<img src="modals/token/img/headerIcon.png" alt="ico" class="circleBtn__img">
+						</a>
+				</div>
+
+				<!-- beige -->
+				<div class="modalWrapper__content modalWrapper__content--token">
+
+						<!-- header -->
+						<h2 class="modalWrapper__content-header">
+								Вывод средств
+						</h2>
+
+						<!-- top block -->
+						<div class="modalWrapper__content-topBlock">
+
+								<!-- info card -->
+								<div class="modalWrapper__content-infoCard infoCard__token">
+										<div class="modalWrapper__content-infoCard-info">
+												<div class="modalWrapper__content-infoCard-info-key">Доступный баланс:</div>
+												<div class="modalWrapper__content-infoCard-info-value">1234.5678</div>
+										</div>
+								</div>
+						</div>
+
+						<!-- SCROLLABLE BODY -->
+						<div class="modalWrapper__content-bodyScrollContainer modalWrapper__content-bodyScrollContainer--AddBalance">
+
+								<div class="balance__inputBlock">
+										<label for="removeBalanceMoloko">Сумма MOLOKO:</label>
+										<input id="removeBalanceMoloko" type="text" placeholder="Введите сумму">
+								</div>
+
+								<div class="balance__inputBlock balance__inputBlock-id">
+										<label for="idMoloko">Кошелек:</label>
+										<input id="idMoloko" type="text" placeholder="Введите id кошелька">
+								</div>
+
+								<!-- flash btn -->
+								<a class="balance__download balance__download--RemoveBalanceModal modalWrapper__content-flashBtn">
+
+										<img src="modals/img/flashBtn/1.svg" alt="flash" class="modalWrapper__content-flashBtn-flashTop">
+										<img src="modals/img/flashBtn/2.svg" alt="flash" class="modalWrapper__content-flashBtn-flashBottom">
+
+										<img src="modals/balance/img/upload.svg" alt="plus" class="modalWrapper__content-flashBtn-icon">
+										<div class="modalWrapper__content-flashBtn-text shadowGradientText">
+												Вывести средства
+										</div>
+								</a>
+
+								<div class="balance_text balance_text--Remove">
+										Просто корми корову, а потом дои. Когда корова даст молока, собирай свою прибыль - монеты становятся твоими!
+								</div>
+						</div>
+				</div>
+		</div>
+</div>
+
+
+
+<!-- TOAST SUCCESS -->
+<div class="toastBorderWrapper toastBorderWrapper--Hidden">
+		<div class="toast toastSuccess">
+				<img src="assets/images/toast-success-icon.svg" alt="success" class="toast__icon">
+
+				<div class="toast__info">
+						<div class="toast__info-title">
+								<span class="shadowGradientText">Успех!</span>
+						</div>
+						<div class="toast__info-text">
+								<span>Необходимо пополнить баланс</span>
+						</div>
+				</div>
+		</div>
+</div>
+
+<!-- TOAST ERROR -->
+<div class="toastBorderWrapper toastBorderWrapper--Hidden">
+		<div class="toast toastError">
+				<img src="assets/images/toast-error-icon.svg" alt="success" class="toast__icon">
+
+				<div class="toast__info">
+						<div class="toast__info-title">
+								<span class="shadowGradientText">Ошибка!</span>
+						</div>
+						<div class="toast__info-text">
+								<span>Необходимо пополнить баланс</span>
+						</div>
+				</div>
+		</div>
 </div>
 
 <!-- Global script -->

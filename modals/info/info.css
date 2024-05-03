@@ -1,0 +1,13 @@
+.modalInfoBlock {
+  font-size: 14px;
+  color: #673D27;
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.modalInfoBlock p {
+  margin: 0;
+}
+

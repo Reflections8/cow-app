@@ -1,0 +1,87 @@
+.modalWrapper__content-bodyScrollContainer--Balance {
+  padding-top: 40px;
+  overflow-y: visible !important;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.modalWrapper__content-bodyScrollContainer--AddBalance {
+  padding-top: 20px;
+}
+
+.balance__upload {
+  margin-bottom: 30px;
+  font-weight: 700;
+  background: linear-gradient(to bottom, #C8E223, #19AA16) !important;
+}
+
+.balance__upload * {
+  font-size: 16px !important;
+
+}
+.balance__download {
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.balance__download * {
+  font-size: 16px !important;
+}
+
+.balance_text {
+  font-size: 14px;
+  color: #673D27;
+}
+
+.balance__inputBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.balance__inputBlock:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.balance__inputBlock label {
+  font-size: 14px;
+  color: #C27248;
+}
+
+.balance__inputBlock input {
+  outline: none;
+  background-color: #FDF4EB;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 11px 15px;
+  border-radius: 10px;
+  color: #C27248;
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  color: #673D27;
+  height: 42px;
+}
+
+.balance__inputBlock-id input {
+  font-size: 10px;
+  height: 42px;
+}
+
+.balance__upload--AddBalanceModal {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.balance__download--RemoveBalanceModal {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.balance_text--Remove, .balance_text--Add {
+  margin-left: 10px;
+  margin-right: 10px;
+}
