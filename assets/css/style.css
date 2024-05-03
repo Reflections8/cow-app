@@ -1,0 +1,237 @@
+@import "./fonts.css";
+@import "../../components/header/header.css";
+@import "../../components/footer/footer.css";
+
+@import "../../ui/circleBtn/circleBtn.css";
+
+*, *:after, *:before {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  color: #C27248;
+}
+
+button {
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+.container {
+  max-width: 400px;
+  padding: 0 5px;
+  margin: 0 auto;
+}
+
+/*.rootContainer {*/
+/*  background-image: url("../images/bg.png");*/
+/*  background-repeat: repeat-x;*/
+/*  color: #C27248;*/
+/*  background-size: cover;*/
+/*  background-position: 40%;*/
+/*  min-height: 754px;*/
+/*  height: 100vh;*/
+/*}*/
+
+.rootContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.mainAbsoluteBg {
+  position: fixed;
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+  object-position: 40%;
+  /*min-height: 754px;*/
+  z-index: -1;
+}
+
+/* ROUND LINK */
+.roundLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .2s ease-in-out;
+}
+
+.roundLink__svg {
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  transition: all .2s ease-in-out;
+}
+
+.roundLink:active {
+  transform: scale(1.05);
+}
+.roundLink:active .roundLink__svg {
+  transform: scale(1.05);
+  box-shadow: 0 0px 0 rgba(0, 0, 0, 0.25);
+}
+
+
+/* MAIN */
+.main {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  flex-direction: column;
+}
+
+.main__cowBlock {
+  display: flex;
+  align-items: flex-end;
+  margin-top: -90px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+
+.main__cowBlock-food {
+  max-width: 120px;
+}
+
+.main__cowBlock-cow {
+  max-width: 170px;
+  margin-left: -40px;
+  margin-right: -10px;
+}
+.main__cowBlock-drink {
+  max-width: 82px;
+}
+
+.mainBars {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.main__bar {
+  padding-top: 26px;
+  padding-bottom: 26px;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(1px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__bar::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 1px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box,
+  linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.main__bar-wood {
+  max-width: 30px;
+  max-height: 260px;
+  position: relative;
+}
+
+.main__bar-wood-bg {
+  width: 100%;
+}
+
+.main__bar-wood-Scale {
+  max-height: 209px;
+  width: 18px;
+  background: linear-gradient(to left, #FFDA18, #FE8A1E);
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  box-shadow: inset 0px 0px 0px 3px rgb(255 255 255 / 15%);
+}
+
+.main__bar-wood-Scale--Right {
+  background: linear-gradient(to left, #2780D3, #41E2F8);
+}
+
+.main__bar-wood-Scale-Blick {
+  position: absolute;
+  right: 3px;
+  top: 3px;
+}
+
+.main__bar-btn {
+  font-size: 10px;
+  /*background-color: #FFD8A6;*/
+  border-radius: 4px;
+  /*box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);*/
+  text-align: center;
+  padding: 5px;
+  margin-top: -4px;
+  transition: all .2s ease-in-out;
+  position: relative;
+}
+
+.main__bar-btn-text {
+  position: relative;
+  z-index: 1;
+}
+
+.main__bar-btn-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main__bar--Left {
+  padding-right: 11px;
+  padding-left: 5px;
+}
+
+.main__bar--Left, .main__bar--Left:after {
+  border-top-right-radius: 42px;
+  border-bottom-right-radius: 42px;
+}
+
+.main__bar--Right {
+  padding-left: 11px;
+  padding-right: 5px;
+}
+
+.main__bar--Right, .main__bar--Right:after {
+  border-top-left-radius: 42px;
+  border-bottom-left-radius: 42px;
+}
+
+.main__bar-action {
+  position: absolute;
+  top: 31px;
+  z-index: 2;
+}
+
+.main__bar-wood-icon {
+  max-width: 49px;
+  width: 100%;
+  margin-top: -25px;
+  position: relative;
+  z-index: 2;
+}

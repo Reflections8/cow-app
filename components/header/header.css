@@ -1,0 +1,85 @@
+.header {
+  background-image: url("img/wood.png");
+  background-repeat: no-repeat;
+  background-size: 390px;
+  width: 100%;
+}
+
+.header__inner {
+  background-image: url("img/beige-bg.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 19px;
+  height: 67px;
+  background-position: top center;
+  padding-top: 11px;
+  padding-bottom: 22px;
+}
+
+.header__inner-item {
+  padding: 4px;
+  border-radius: 16px;
+  background: #FDF4EB;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2px;
+  max-width: 140px;
+  width: 100%;
+}
+
+.header__inner-item-icon {
+  max-width: 26px;
+  width: 100%;
+}
+
+.header__infoBlock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  margin-top: -16px;
+}
+
+.header__infoBlock-book {
+  position: relative;
+  z-index: 1;
+}
+
+.header__infoBlock-btn {
+  background-image: url("img/heptagon-border.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  padding: 8px 12px;
+  width: fit-content;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 13px;
+  margin-top: -8px;
+  transition: all .2s ease-in-out;
+}
+
+.header__infoBlock-btn:active {
+  transform: scale(1.03);
+}
+
+@media screen and (max-width: 400px) {
+  .header {
+    background-size: contain;
+  }
+}
+
+@media screen and (max-width: 352px) {
+  .header__inner {
+    height: 64px;
+    gap: 10px;
+  }
+
+  .circleBtnWrapper {
+    transform: scale(0.95);
+  }
+}
