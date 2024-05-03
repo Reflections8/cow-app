@@ -14,11 +14,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
     observer.observe(scale, { attributes: true });
   })
+
+  const documentHeight = () => {
+    const doc = document.documentElement
+    doc.style.setProperty('--doc-height', `${window.innerHeight}px`)
+  }
+  window.addEventListener('resize', documentHeight)
+  documentHeight()
+
+  function getScaleValue(scale) {
+    const value = scale.getAttribute('data-scale-progress')
+    const result = (value / 100) * 210
+    scale.setAttribute('style', `height: ${result}px`)
+  }
+
 })
 
 
-function getScaleValue(scale) {
-  const value = scale.getAttribute('data-scale-progress')
-  const result = (value / 100) * 210
-  scale.setAttribute('style', `height: ${result}px`)
-}
