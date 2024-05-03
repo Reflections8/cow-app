@@ -2,6 +2,8 @@
 @import "../../components/header/header.css";
 @import "../../components/footer/footer.css";
 
+@import "../../modals/style.css";
+
 @import "../../ui/circleBtn/circleBtn.css";
 
 *, *:after, *:before {
@@ -228,10 +230,15 @@ a {
   z-index: 2;
 }
 
-.main__bar-wood-icon {
+.main__bar-wood-btn {
+  display: flex;
   max-width: 49px;
   width: 100%;
   margin-top: -25px;
   position: relative;
   z-index: 2;
+}
+
+.main__bar-wood-btn-icon {
+  width: 100%;
 }

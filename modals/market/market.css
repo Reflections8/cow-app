@@ -1,0 +1,87 @@
+.market__list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.market__list-item {
+    border-radius: 16px;
+    padding: 5px;
+    background: #FDF4EB;
+    box-shadow: 0 1px 0 #00000033;
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.market__list-item-iconBox {
+    max-width: 76px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.market__list-item-iconBox-hay {
+    max-width: 60px;
+    width: 100%;
+    margin-bottom: -2px;
+}
+
+.market__list-item-iconBox-value {
+    background-image: url('img/wood.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    padding: 3px 3px 3px 4px;
+    max-width: 76px;
+    width: 100%;
+}
+
+.market__list-item-iconBox-value {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 13px;
+    font-weight: 500;
+}
+.market__list-item-buyButton {
+    margin-left: 15px;
+    max-width: 67px;
+    width: 100%;
+}
+
+.market__list-item-badges {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: auto;
+    align-items: flex-end;
+}
+
+.market__list-item-badges-item {
+    border-radius: 17px;
+    background-color: #69C226 !important;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 6px 8px;
+    width: fit-content;
+}
+
+.market__list-item--Soon {
+    opacity: 80%;
+}
+
+.market__list-item--Soon .market__list-item-buyButton {
+    background: #EBC189;
+    color: #C27248;
+    box-shadow: inset 0 2px 0 #0000003d;
+}
+
+.market__list-item--Soon .modalWrapper__content-flashBtn-flashTop {
+    display: none;
+}
+.market__list-item--Soon .modalWrapper__content-flashBtn-flashBottom {
+    display: none;
+}

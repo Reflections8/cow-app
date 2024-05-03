@@ -246,9 +246,11 @@
 								</div>
 
 								<!-- icon -->
-								<img src="components/main/img/food-icon.png"
+								<a href="#" class="main__bar-wood-btn">
+									<img src="components/main/img/food-icon.png"
 										 alt="food"
-										 class="main__bar-wood-icon">
+										 class="main__bar-wood-btn-icon">
+								</a>
 
 								<!-- text -->
 								<a class="main__bar-btn">
@@ -315,15 +317,17 @@
 												 alt="wood"
 												 class="main__bar-wood-bg main__bar--Right-wood-bg">
 
-										<div class="main__bar-wood-Scale main__bar-wood-Scale--Right" data-scale data-scale-progress="50">
+										<div class="main__bar-wood-Scale main__bar-wood-Scale--Right" data-scale data-scale-progress="78">
 												<img src="components/main/img/blick.svg" alt="blick" class="main__bar-wood-Scale-Blick">
 										</div>
 								</div>
 
 								<!-- icon -->
-								<img src="components/main/img/drink-icon.png"
+								<a href="#" class="main__bar-wood-btn">
+									<img src="components/main/img/drink-icon.png"
 										 alt="food"
-										 class="main__bar-wood-icon">
+										 class="main__bar-wood-btn-icon">
+								</a>
 
 								<!-- text -->
 								<a class="main__bar-btn">
@@ -426,12 +430,448 @@
 		</footer>
 </div>
 
+<div class="modalWrapper">
+
+	<!-- 1) MARKET -->
+	<!-- wood -->
+	<div class="modalWrapper__woodBg">
+		
+		<!-- close icon -->
+		<img src="modals/img/close.png" alt="close" class="modalWrapper__woodBg-closeIcon">
+
+		<!-- ui/circleBtn -->
+		<div class="modalWrapper__woodBg-centerIcon circleBtnWrapper">
+			<a class="circleBtn">
+				<img src="modals/market/img/headerIcon.svg" alt="ico" class="circleBtn__img">
+			</a>
+		</div>
+
+		<!-- beige -->
+		<div class="modalWrapper__content">
+
+			<!-- header -->
+			<h2 class="modalWrapper__content-header">
+				Маркет
+			</h2>
+
+			<!-- top block -->
+			<div class="modalWrapper__content-topBlock">
+
+				<!-- info card -->
+				<div class="modalWrapper__content-infoCard">
+					<div class="modalWrapper__content-infoCard-info">
+						<div class="modalWrapper__content-infoCard-info-key">Баланс:</div>
+						<div class="modalWrapper__content-infoCard-info-value">1234.5678</div>
+					</div>
+
+					<img src="modals/market/img/toncoin.svg" alt="" class="modalWrapper__content-infoCard-icon">
+
+				</div>
+
+				<!-- info card -->
+				<div class="modalWrapper__content-infoCard">
+					<div class="modalWrapper__content-infoCard-info">
+						<div class="modalWrapper__content-infoCard-info-key">
+							Пополнить
+							баланс <a>TON</a>
+						</div>
+					</div>
+
+					<img src="modals/market/img/plus.svg" alt="" class="modalWrapper__content-infoCard-icon">
+
+				</div>
+			</div>
+
+			<!-- SCROLLABLE BODY -->
+			<div class="modalWrapper__content-bodyScrollContainer">
+				
+				<!-- market list -->
+				<div class="modalWrapper__content-body market__list">
+					
+					<!-- ITEM -->
+					<div class="market__list-item">
+
+						<!-- icon -->
+						<div class="market__list-item-iconBox">
+							<img src="modals/market/img/list/seno 1.png" alt="seno" class="market__list-item-iconBox-hay">
+
+							<div class="market__list-item-iconBox-value">
+								<img src="modals/market/img/item-toncoin.svg" alt="toncoin" class="market__list-item-iconBox-value-icon">
+								<div class="market__list-item-iconBox-value-text shadowGradientText">12.35</div>
+							</div>
+						</div>
+
+						<!-- badges -->
+						<div class="market__list-item-badges">
+							<div class="market__list-item-badges-item">
+								<span class="shadowGradientText">+1.5 TON</span>
+							</div>
+							<div class="market__list-item-badges-item">
+								<span class="shadowGradientText">+10 MOLOKO</span>
+							</div>
+						</div>
+						
+
+						<!-- flash btn -->
+						<a class="market__list-item-buyButton modalWrapper__content-flashBtn modalWrapper__content-flashBtn--Vertical">
+
+							<img src="modals/img/flashBtn/1.svg" alt="flash" class="modalWrapper__content-flashBtn-flashTop">
+							<img src="modals/img/flashBtn/2.svg" alt="flash" class="modalWrapper__content-flashBtn-flashBottom">
+
+							<img src="modals/img/flashBtn/plus.svg" alt="plus" class="modalWrapper__content-flashBtn-icon">
+							<div class="modalWrapper__content-flashBtn-text shadowGradientText">
+								Купить
+							</div>
+						</a>
+					</div>
+
+					<!-- ITEM -->
+					<div class="market__list-item">
+
+						<!-- icon -->
+						<div class="market__list-item-iconBox">
+							<img src="modals/market/img/list/seno 2.png" alt="seno" class="market__list-item-iconBox-hay">
+
+							<div class="market__list-item-iconBox-value">
+								<img src="modals/market/img/item-toncoin.svg" alt="toncoin" class="market__list-item-iconBox-value-icon">
+								<div class="market__list-item-iconBox-value-text shadowGradientText">12.35</div>
+							</div>
+						</div>
+
+						<!-- badges -->
+						<div class="market__list-item-badges">
+							<div class="market__list-item-badges-item">
+								<span class="shadowGradientText">+1.5 TON</span>
+							</div>
+							<div class="market__list-item-badges-item">
+								<span class="shadowGradientText">+10 MOLOKO</span>
+							</div>
+						</div>
+						
+
+						<!-- flash btn -->
+						<a class="market__list-item-buyButton modalWrapper__content-flashBtn modalWrapper__content-flashBtn--Vertical">
+
+							<img src="modals/img/flashBtn/1.svg" alt="flash" class="modalWrapper__content-flashBtn-flashTop">
+							<img src="modals/img/flashBtn/2.svg" alt="flash" class="modalWrapper__content-flashBtn-flashBottom">
+
+							<img src="modals/img/flashBtn/plus.svg" alt="plus" class="modalWrapper__content-flashBtn-icon">
+							<div class="modalWrapper__content-flashBtn-text shadowGradientText">
+								Купить
+							</div>
+						</a>
+					</div>
+
+					<!-- ITEM -->
+					<div class="market__list-item">
+
+						<!-- icon -->
+						<div class="market__list-item-iconBox">
+							<img src="modals/market/img/list/seno 3.png" alt="seno" class="market__list-item-iconBox-hay">
+
+							<div class="market__list-item-iconBox-value">
+								<img src="modals/market/img/item-toncoin.svg" alt="toncoin" class="market__list-item-iconBox-value-icon">
+								<div class="market__list-item-iconBox-value-text shadowGradientText">12.35</div>
+							</div>
+						</div>
+
+						<!-- badges -->
+						<div class="market__list-item-badges">
+							<div class="market__list-item-badges-item">
+								<span class="shadowGradientText">+1.5 TON</span>
+							</div>
+							<div class="market__list-item-badges-item">
+								<span class="shadowGradientText">+10 MOLOKO</span>
+							</div>
+						</div>
+						
+
+						<!-- flash btn -->
+						<a class="market__list-item-buyButton modalWrapper__content-flashBtn modalWrapper__content-flashBtn--Vertical">
+
+							<img src="modals/img/flashBtn/1.svg" alt="flash" class="modalWrapper__content-flashBtn-flashTop">
+							<img src="modals/img/flashBtn/2.svg" alt="flash" class="modalWrapper__content-flashBtn-flashBottom">
+
+							<img src="modals/img/flashBtn/plus.svg" alt="plus" class="modalWrapper__content-flashBtn-icon">
+							<div class="modalWrapper__content-flashBtn-text shadowGradientText">
+								Купить
+							</div>
+						</a>
+					</div>
+
+					<!-- ITEM -->
+					<div class="market__list-item market__list-item--Soon">
+
+						<!-- icon -->
+						<div class="market__list-item-iconBox">
+							<img src="modals/market/img/list/seno 4.png" alt="seno" class="market__list-item-iconBox-hay">
+
+							<div class="market__list-item-iconBox-value">
+								<img src="modals/market/img/item-toncoin.svg" alt="toncoin" class="market__list-item-iconBox-value-icon">
+								<div class="market__list-item-iconBox-value-text shadowGradientText">12.35</div>
+							</div>
+						</div>
+
+						<!-- badges -->
+						<div class="market__list-item-badges">
+							<div class="market__list-item-badges-item">
+								<span class="shadowGradientText">+1.5 TON</span>
+							</div>
+							<div class="market__list-item-badges-item">
+								<span class="shadowGradientText">+10 MOLOKO</span>
+							</div>
+						</div>
+						
+
+						<!-- flash btn -->
+						<a class="market__list-item-buyButton modalWrapper__content-flashBtn modalWrapper__content-flashBtn--Vertical">
+
+							<img src="modals/img/flashBtn/1.svg" alt="flash" class="modalWrapper__content-flashBtn-flashTop">
+							<img src="modals/img/flashBtn/2.svg" alt="flash" class="modalWrapper__content-flashBtn-flashBottom">
+
+							<img src="modals/img/flashBtn/plus.svg" alt="plus" class="modalWrapper__content-flashBtn-icon">
+							<div class="modalWrapper__content-flashBtn-text shadowGradientText">
+								Скоро
+							</div>
+						</a>
+					</div>
+
+					<!-- ITEM -->
+					<div class="market__list-item market__list-item--Soon">
+
+						<!-- icon -->
+						<div class="market__list-item-iconBox">
+							<img src="modals/market/img/list/seno 5.png" alt="seno" class="market__list-item-iconBox-hay">
+
+							<div class="market__list-item-iconBox-value">
+								<img src="modals/market/img/item-toncoin.svg" alt="toncoin" class="market__list-item-iconBox-value-icon">
+								<div class="market__list-item-iconBox-value-text shadowGradientText">12.35</div>
+							</div>
+						</div>
+
+						<!-- badges -->
+						<div class="market__list-item-badges">
+							<div class="market__list-item-badges-item">
+								<span class="shadowGradientText">+1.5 TON</span>
+							</div>
+							<div class="market__list-item-badges-item">
+								<span class="shadowGradientText">+10 MOLOKO</span>
+							</div>
+						</div>
+						
+
+						<!-- flash btn -->
+						<a class="market__list-item-buyButton modalWrapper__content-flashBtn modalWrapper__content-flashBtn--Vertical">
+
+							<img src="modals/img/flashBtn/1.svg" alt="flash" class="modalWrapper__content-flashBtn-flashTop">
+							<img src="modals/img/flashBtn/2.svg" alt="flash" class="modalWrapper__content-flashBtn-flashBottom">
+
+							<img src="modals/img/flashBtn/plus.svg" alt="plus" class="modalWrapper__content-flashBtn-icon">
+							<div class="modalWrapper__content-flashBtn-text shadowGradientText">
+								Скоро
+							</div>
+						</a>
+					</div>
+
+					<!-- ITEM -->
+					<div class="market__list-item market__list-item--Soon">
+
+						<!-- icon -->
+						<div class="market__list-item-iconBox">
+							<img src="modals/market/img/list/seno 6.png" alt="seno" class="market__list-item-iconBox-hay">
+
+							<div class="market__list-item-iconBox-value">
+								<img src="modals/market/img/item-toncoin.svg" alt="toncoin" class="market__list-item-iconBox-value-icon">
+								<div class="market__list-item-iconBox-value-text shadowGradientText">12.35</div>
+							</div>
+						</div>
+
+						<!-- badges -->
+						<div class="market__list-item-badges">
+							<div class="market__list-item-badges-item">
+								<span class="shadowGradientText">+1.5 TON</span>
+							</div>
+							<div class="market__list-item-badges-item">
+								<span class="shadowGradientText">+10 MOLOKO</span>
+							</div>
+						</div>
+						
+
+						<!-- flash btn -->
+						<a class="market__list-item-buyButton modalWrapper__content-flashBtn modalWrapper__content-flashBtn--Vertical">
+
+							<img src="modals/img/flashBtn/1.svg" alt="flash" class="modalWrapper__content-flashBtn-flashTop">
+							<img src="modals/img/flashBtn/2.svg" alt="flash" class="modalWrapper__content-flashBtn-flashBottom">
+
+							<img src="modals/img/flashBtn/plus.svg" alt="plus" class="modalWrapper__content-flashBtn-icon">
+							<div class="modalWrapper__content-flashBtn-text shadowGradientText">
+								Скоро
+							</div>
+						</a>
+					</div>
+
+					<!-- ITEM -->
+					<div class="market__list-item market__list-item--Soon">
+
+						<!-- icon -->
+						<div class="market__list-item-iconBox">
+							<img src="modals/market/img/list/seno 7.png" alt="seno" class="market__list-item-iconBox-hay">
+
+							<div class="market__list-item-iconBox-value">
+								<img src="modals/market/img/item-toncoin.svg" alt="toncoin" class="market__list-item-iconBox-value-icon">
+								<div class="market__list-item-iconBox-value-text shadowGradientText">12.35</div>
+							</div>
+						</div>
+
+						<!-- badges -->
+						<div class="market__list-item-badges">
+							<div class="market__list-item-badges-item">
+								<span class="shadowGradientText">+1.5 TON</span>
+							</div>
+							<div class="market__list-item-badges-item">
+								<span class="shadowGradientText">+10 MOLOKO</span>
+							</div>
+						</div>
+						
+
+						<!-- flash btn -->
+						<a class="market__list-item-buyButton modalWrapper__content-flashBtn modalWrapper__content-flashBtn--Vertical">
+
+							<img src="modals/img/flashBtn/1.svg" alt="flash" class="modalWrapper__content-flashBtn-flashTop">
+							<img src="modals/img/flashBtn/2.svg" alt="flash" class="modalWrapper__content-flashBtn-flashBottom">
+
+							<img src="modals/img/flashBtn/plus.svg" alt="plus" class="modalWrapper__content-flashBtn-icon">
+							<div class="modalWrapper__content-flashBtn-text shadowGradientText">
+								Скоро
+							</div>
+						</a>
+					</div>
+
+					<!-- ITEM -->
+					<div class="market__list-item market__list-item--Soon">
+
+						<!-- icon -->
+						<div class="market__list-item-iconBox">
+							<img src="modals/market/img/list/seno 8.png" alt="seno" class="market__list-item-iconBox-hay">
+
+							<div class="market__list-item-iconBox-value">
+								<img src="modals/market/img/item-toncoin.svg" alt="toncoin" class="market__list-item-iconBox-value-icon">
+								<div class="market__list-item-iconBox-value-text shadowGradientText">12.35</div>
+							</div>
+						</div>
+
+						<!-- badges -->
+						<div class="market__list-item-badges">
+							<div class="market__list-item-badges-item">
+								<span class="shadowGradientText">+1.5 TON</span>
+							</div>
+							<div class="market__list-item-badges-item">
+								<span class="shadowGradientText">+10 MOLOKO</span>
+							</div>
+						</div>
+						
+
+						<!-- flash btn -->
+						<a class="market__list-item-buyButton modalWrapper__content-flashBtn modalWrapper__content-flashBtn--Vertical">
+
+							<img src="modals/img/flashBtn/1.svg" alt="flash" class="modalWrapper__content-flashBtn-flashTop">
+							<img src="modals/img/flashBtn/2.svg" alt="flash" class="modalWrapper__content-flashBtn-flashBottom">
+
+							<img src="modals/img/flashBtn/plus.svg" alt="plus" class="modalWrapper__content-flashBtn-icon">
+							<div class="modalWrapper__content-flashBtn-text shadowGradientText">
+								Скоро
+							</div>
+						</a>
+					</div>
+
+					<!-- ITEM -->
+					<div class="market__list-item market__list-item--Soon">
+
+						<!-- icon -->
+						<div class="market__list-item-iconBox">
+							<img src="modals/market/img/list/seno 9.png" alt="seno" class="market__list-item-iconBox-hay">
+
+							<div class="market__list-item-iconBox-value">
+								<img src="modals/market/img/item-toncoin.svg" alt="toncoin" class="market__list-item-iconBox-value-icon">
+								<div class="market__list-item-iconBox-value-text shadowGradientText">12.35</div>
+							</div>
+						</div>
+
+						<!-- badges -->
+						<div class="market__list-item-badges">
+							<div class="market__list-item-badges-item">
+								<span class="shadowGradientText">+1.5 TON</span>
+							</div>
+							<div class="market__list-item-badges-item">
+								<span class="shadowGradientText">+10 MOLOKO</span>
+							</div>
+						</div>
+						
+
+						<!-- flash btn -->
+						<a class="market__list-item-buyButton modalWrapper__content-flashBtn modalWrapper__content-flashBtn--Vertical">
+
+							<img src="modals/img/flashBtn/1.svg" alt="flash" class="modalWrapper__content-flashBtn-flashTop">
+							<img src="modals/img/flashBtn/2.svg" alt="flash" class="modalWrapper__content-flashBtn-flashBottom">
+
+							<img src="modals/img/flashBtn/plus.svg" alt="plus" class="modalWrapper__content-flashBtn-icon">
+							<div class="modalWrapper__content-flashBtn-text shadowGradientText">
+								Скоро
+							</div>
+						</a>
+					</div>
+
+					<!-- ITEM -->
+					<div class="market__list-item market__list-item--Soon">
+
+						<!-- icon -->
+						<div class="market__list-item-iconBox">
+							<img src="modals/market/img/list/seno 10.png" alt="seno" class="market__list-item-iconBox-hay">
+
+							<div class="market__list-item-iconBox-value">
+								<img src="modals/market/img/item-toncoin.svg" alt="toncoin" class="market__list-item-iconBox-value-icon">
+								<div class="market__list-item-iconBox-value-text shadowGradientText">12.35</div>
+							</div>
+						</div>
+
+						<!-- badges -->
+						<div class="market__list-item-badges">
+							<div class="market__list-item-badges-item">
+								<span class="shadowGradientText">+1.5 TON</span>
+							</div>
+							<div class="market__list-item-badges-item">
+								<span class="shadowGradientText">+10 MOLOKO</span>
+							</div>
+						</div>
+						
+
+						<!-- flash btn -->
+						<a class="market__list-item-buyButton modalWrapper__content-flashBtn modalWrapper__content-flashBtn--Vertical">
+
+							<img src="modals/img/flashBtn/1.svg" alt="flash" class="modalWrapper__content-flashBtn-flashTop">
+							<img src="modals/img/flashBtn/2.svg" alt="flash" class="modalWrapper__content-flashBtn-flashBottom">
+
+							<img src="modals/img/flashBtn/plus.svg" alt="plus" class="modalWrapper__content-flashBtn-icon">
+							<div class="modalWrapper__content-flashBtn-text shadowGradientText">
+								Скоро
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
 <!-- Global script -->
 <script src="assets/js/index.js"></script>
 
 <!-- Component scripts -->
 <script src="components/header/header.js"></script>
 <script src="components/footer/footer.js"></script>
+
+<!-- Modal script -->
+<script src="modals/index.js"></script>
 
 
 </body>
