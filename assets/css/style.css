@@ -115,8 +115,11 @@ a {
   margin-left: -40px;
   margin-right: -10px;
 }
+
 .main__cowBlock-drink {
-  max-width: 82px;
+  max-width: 70px;
+  position: relative;
+  top: 20px;
 }
 
 .mainBars {
@@ -236,6 +239,7 @@ a {
 }
 
 .main__bar-wood-btn {
+  cursor: pointer;
   display: flex;
   max-width: 49px;
   width: 100%;
