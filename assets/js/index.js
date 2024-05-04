@@ -71,6 +71,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     if (count <= 5) {
+      items.forEach(item => {
+        item.removeAttribute('style')
+      })
       container.classList.remove('main__bar-wood-ScaleContainer--TwoColumns')
     }
   }
