@@ -165,27 +165,87 @@ a {
   width: 100%;
 }
 
-.main__bar-wood-Scale {
-  max-height: 209px;
-  width: 18px;
-  background: linear-gradient(to left, #FFDA18, #FE8A1E);
+.main__bar-wood-ScaleContainer {
   position: absolute;
-  bottom: 16px;
+  bottom: 27px;
   left: 50%;
   transform: translateX(-50%);
-  border-top-left-radius: 9px;
-  border-top-right-radius: 9px;
+  max-height: 201px;
+  display: grid;
+  height: 100%;
+  width: 100%;
+  max-width: 22px;
+
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(38px, 1fr);
+  gap: 1px 2px;
+  align-content: end;
+}
+
+.main__bar-wood-ScaleContainer--TwoColumns {
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 0.2fr;
+  grid-auto-flow: column;
+}
+
+.main__bar-wood-ScaleContainer--TwoColumns .main__bar-wood-ScaleBg:nth-child(n+1):nth-child(-n+5) {
+  grid-column: 1;
+}
+
+.main__bar-wood-ScaleContainer--TwoColumns .main__bar-wood-ScaleBg:nth-child(n+6):nth-child(-n+10) {
+  grid-column: 2;
+}
+
+/* RIGHT */
+.main__bar-wood-ScaleContainer--Right.main__bar-wood-ScaleContainer--TwoColumns .main__bar-wood-ScaleBg:nth-child(n+1):nth-child(-n+5) {
+  grid-column: 2;
+}
+
+.main__bar-wood-ScaleContainer--Right.main__bar-wood-ScaleContainer--TwoColumns .main__bar-wood-ScaleBg:nth-child(n+6):nth-child(-n+10) {
+  grid-column: 1;
+}
+
+
+.main__bar-wood-ScaleContainer--TwoColumns .main__bar-wood-ScaleBg {
+  border-width: 1px;
+}
+
+.main__bar-wood-ScaleBg {
+  background-color: rgba(94, 29, 0, 0.5);
+  border: 1.5px solid #582006;
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+
+.main__bar-wood-Scale {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to left, #FFDA18, #FE8A1E);
+  border-radius: 9px;
   box-shadow: inset 0px 0px 0px 3px rgb(255 255 255 / 15%);
 }
 
-.main__bar-wood-Scale--Right {
+.main__bar--Right-wood .main__bar-wood-Scale {
   background: linear-gradient(to left, #2780D3, #41E2F8);
 }
 
 .main__bar-wood-Scale-Blick {
+  display: none;
   position: absolute;
   right: 3px;
   top: 3px;
+}
+
+.main__bar-wood-Scale-Blick--Small {
+  width: 3px;
+  top: 2px;
+  right: 3px;
 }
 
 .main__bar-btn {
