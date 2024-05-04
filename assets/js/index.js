@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function getScaleValue(scale) {
     const value = scale.getAttribute('data-scale-progress')
-    scale.setAttribute('style', `height: ${value}px`)
+    scale.setAttribute('style', `height: ${value}%`)
   }
 
   function handleScaleContainerRender(container) {
